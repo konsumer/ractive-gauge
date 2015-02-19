@@ -59,7 +59,7 @@ or alternately use one of the files in `dist/`, locally.
 </script>
 
 <script src="https://cdn.ractivejs.org/latest/ractive.min.js"></script>
-<script src="http://konsumer.github.io/ractive-gauge/dist/ractive-gauge.min.js"></script>
+<script src="https://konsumer.github.io/ractive-gauge/dist/ractive-gauge.min.js"></script>
 <script>
 var ractive = new Ractive({
 	el: 'container',
