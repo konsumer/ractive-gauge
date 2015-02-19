@@ -2,7 +2,7 @@
   "name": "ractive-gauge",
   "version": "0.0.7",
   "description": "A simple UV-type meter for Ractive",
-  "main": "dist/ractive-gauge.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/konsumer/ractive-gauge.git"
@@ -21,14 +21,14 @@
   },
   "homepage": "https://github.com/konsumer/ractive-gauge",
   "scripts": {
-    "js": "browserify -t stringify -x ractive --standalone gauge -o dist/ractive-gauge.js index.js && uglifyjs dist/ractive-gauge.js -o dist/ractive-gauge.min.js",
+    "js": "browserify -t brfs -x ractive --standalone gauge -o dist/ractive-gauge.js index.js && uglifyjs dist/ractive-gauge.js -o dist/ractive-gauge.min.js",
     "bump": "npm run js && mversion patch -m && npm publish"
   },
   "devDependencies": {
     "browserify": "^8.1.3",
     "mversion": "^1.9.0",
-    "stringify": "^3.1.0",
-    "uglify-js": "^2.4.16"
+    "uglify-js": "^2.4.16",
+    "brfs": "^1.3.0"
   },
   "peerDependencies": {
     "ractive": "^0.6.1"

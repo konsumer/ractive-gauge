@@ -1,7 +1,8 @@
 var Ractive = window ? window.Ractive : require('ractive');
 if (!Ractive && require) Ractive = require('ractive');
 
-var template = require('./gauge.svg.txt');
+var fs = require('fs');
+var template = fs.readFileSync(__dirname + '/gauge.svg', 'utf8') + "";
 
 Ractive.components.gauge = module.exports = Ractive.extend({
   template: template,
