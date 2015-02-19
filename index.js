@@ -3,7 +3,7 @@ if (!Ractive && require) Ractive = require('ractive');
 
 var template = require('./gauge.svg.txt');
 
-Ractive.components.gauge = Ractive.extend({
+Ractive.components.gauge = module.exports = Ractive.extend({
   template: template,
   data: {
     label: 'gauge',
