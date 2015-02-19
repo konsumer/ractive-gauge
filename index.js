@@ -6,7 +6,7 @@ Ractive.components.gauge = Ractive.extend({
   data: {
     label: 'guage',
     value: 0,
-    rot:0
+    rot: 0
   },
   onrender: function(){
     this.observe('value', function(val) {

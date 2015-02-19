@@ -22,7 +22,7 @@
   "homepage": "https://github.com/konsumer/ractive-gauge",
   "scripts": {
     "js": "browserify . -x ractive --standalone gauge -o dist/ractive-gauge.js && uglifyjs dist/ractive-gauge.js -o dist/ractive-gauge.min.js",
-    "bump": "npm run js && git add dist/ && git commit -am 'build' && mversion patch -m && npm publish"
+    "bump": "npm run js && git add -A && git commit -am 'build' && mversion patch -m && npm publish"
   },
   "devDependencies": {
     "browserify": "^8.1.3",
