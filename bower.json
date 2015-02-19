@@ -1,6 +1,6 @@
 {
   "name": "ractive-gauge",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A simple UV-type meter for Ractive",
   "main": "dist/ractive-gauge.js",
   "keywords": [
