@@ -1,0 +1,19 @@
+{
+  "name": "ractive-gauge",
+  "version": "0.0.1",
+  "description": "A simple UV-type meter for Ractive",
+  "main": "dist/ractive-gauge.js",
+  "keywords": [
+    "ractive",
+    "meter",
+    "gauge",
+    "guage",
+    "uv"
+  ],
+  "author": "David Konsumer <konsumer@jetboystudio.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/konsumer/ractive-gauge",
+  "dependencies": {
+    "ractive": "^0.6.1"
+  }
+}
