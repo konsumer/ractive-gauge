@@ -50,5 +50,5 @@ text-anchor:middle;
 <path transform="translate(1,1)" d="m3 0 10 0c3 0 3 0 3 3l0 10c0 3 0 3-3 3L3 16C0 16 0 16 0 13L0 3C0 0 0 0 3 0" style="fill:none;stroke-opacity:0;stroke:#000"/>
 <path d="m3 0 10 0c3 0 3 0 3 3l0 10c0 3 0 3-3 3L3 16C0 16 0 16 0 13L0 3C0 0 0 0 3 0" style="fill-opacity:1;fill:#f9f9f9"/>
 </g>
-<line x1="128" y1="130" x2="17" y2="69" transform="rotate({{rot}}, 128,130)" style="fill:none;stroke:#000"/>
+<line x1="128" y1="130" x2="17" y2="69" transform="rotate({{value*1.215}}, 128,130)" style="fill:none;stroke:#000"/>
 </svg>
