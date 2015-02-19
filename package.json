@@ -2,7 +2,7 @@
   "name": "ractive-gauge",
   "version": "0.0.6",
   "description": "A simple UV-type meter for Ractive",
-  "main": "index.js",
+  "main": "dist/ractive-gauge.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/konsumer/ractive-gauge.git"
