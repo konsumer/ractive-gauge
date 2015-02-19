@@ -32,7 +32,7 @@ require('ractive-gauge');
 Put `dist/ractive-gauge.js` in your require path, then you can do this:
 
 ```javascript
-define(['ractive', ractive-gauge'], function(Ractive, gauge){
+define(['ractive', 'ractive-gauge'], function(Ractive, gauge){
     // do stuff
 });
 ```
