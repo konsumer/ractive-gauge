@@ -10,7 +10,7 @@ Ractive.components.gauge = module.exports = Ractive.extend({
   data: {
     label: 'gauge',
     value: 0,
-    line_color: '#000'
+    line_color: #000
   }
 });
 },{"ractive":"ractive"}]},{},[1])(1)
