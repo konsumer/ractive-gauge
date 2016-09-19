@@ -42,7 +42,7 @@ define(['ractive', 'ractive-gauge'], function(Ractive, gauge){
 You can use a CDN:
 
 ```html
-<script src="http://konsumer.github.io/ractive-gauge/dist/ractive-gauge.min.js"></script>
+<script src="http://konsumer.js.org/ractive-gauge/dist/ractive-gauge.min.js"></script>
 ```
 
 or alternately use one of the files in `dist/`, locally.
