@@ -73,47 +73,49 @@ var ractive = new Ractive({
 
 ### styling
 
-You can use a custom SVG, and rebuild with `npm run build` or, if you don't need to change the overall look, but just want to change some colors, put this in your app's CSS, and change any values you like:
+You can use a custom SVG, and rebuild with `npm run build` or, if you don't need to change the overall look, but just want to change some colors, put this in your app's CSS, and change any styles you like:
 
 ```css
-.mark1 {
+.ractive-gauge .mark1 {
   fill: none;
   stroke: #a0a0a0;
 }
-.mark2 {
+.ractive-gauge .mark2 {
   fill: none;
   stroke: #c0d0e0;
 }
-.center {
-  fill: none;
-  stroke: #c0d0e0;
+.ractive-gauge .center {
+  fill:none;
+  stroke:#c0d0e0;
 }
-.number {
+.ractive-gauge .number {
   fill: #606060;
 }
-.low {
+.ractive-gauge .low {
   fill: #fc172a;
 }
-.medlow{
+.ractive-gauge .medlow {
   fill: #ffe0e1;
 }
-.medhi {
+.ractive-gauge .medhi {
   fill: #e3ffe1;
 }
-.hi {
+.ractive-gauge .hi {
   fill: #2cc71f;
 }
-.needle {
+.ractive-gauge .needle {
   fill: none;
   stroke: black;
 }
-.label {
+.ractive-gauge .label {
   fill: #707070;
 }
-.value {
+.ractive-gauge .value {
   fill: #707070;
 }
 ```
+
+These are just the colors, but you can change any SVG styles you like (eg `stroke-width`.)
 
 ### development
 
