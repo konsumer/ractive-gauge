@@ -1,20 +1,64 @@
-<title>ractive-gauge</title>
+<title.styled_gauge .ractive-gauge</title>
+
+<style>
+.styled_gauge .ractive-gauge {
+  background: black;
+}
+.styled_gauge .ractive-gauge .mark1 {
+  stroke: red;
+}
+.styled_gauge .ractive-gauge .mark2 {
+  stroke: #c0d0e0;
+}
+.styled_gauge .ractive-gauge .number {
+  fill: lightblue;
+}
+.styled_gauge .ractive-gauge .low {
+  fill: purple;
+}
+.styled_gauge .ractive-gauge .medlow{
+  fill: pink;
+}
+.styled_gauge .ractive-gauge .med {
+  fill: yellow;
+}
+.styled_gauge .ractive-gauge .medhi {
+  fill: green;
+}
+.styled_gauge .ractive-gauge .needle {
+  stroke: red;
+}
+.styled_gauge .ractive-gauge .label {
+  fill: brown;
+}
+.styled_gauge .ractive-gauge .value {
+  fill: teal;
+}
+
+.styled_gauge .ractive-gauge .center {
+  fill: #333;
+}
+</style>
 
 <div id="container"></div>
 
 <script id='template' type='text/ractive'>
 	<gauge value="{{coolness}}" label="coolness" /><br>
 	<input min="0" max="100" type="range" value="{{coolness}}" style="width:255px;margin-left:2.5px"/>
+  <div class="styled_gauge">
+    <gauge value="{{coolness}}" label="styled" /><br>
+  </div>
 </script>
 
 <script src="http://cdn.ractivejs.org/latest/ractive.min.js"></script>
 <script src="dist/ractive-gauge.js"></script>
 <script>
-var ractive = new Ractive({
-	el: 'container',
-	template: '#template',
-	data: {
-		coolness:0
-	}
-});
+var gauge = new Ractive({
+  el: 'container',
+  template: '#template',
+  data: {
+    coolness: 0
+  }
+})
+
 </script>
